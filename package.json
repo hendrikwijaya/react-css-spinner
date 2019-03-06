@@ -1,0 +1,20 @@
+{
+  "name": "react-css-spinner",
+  "version": "1.0.0",
+  "description": "CSS only spinner for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hendrikwijaya/react-css-spinner.git"
+  },
+  "keywords": ["react", "css", "spinner"],
+  "author": "Hendrik Wijaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hendrikwijaya/react-css-spinner/issues"
+  },
+  "homepage": "https://github.com/hendrikwijaya/react-css-spinner#readme"
+}
