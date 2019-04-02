@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './styles.css';
 
-const Ripple = props => (
+const CssStyles = JSON.stringify(styles);
+const Ripple = () => (
   <>
-    <style>{styles}</style>
+    <style>{CssStyles}</style>
     <div className="lds-ripple">
       <div />
       <div />

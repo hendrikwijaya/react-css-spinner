@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './styles.css';
 
-const Ellipsis = props => (
+const CssStyles = JSON.stringify(styles);
+const Ellipsis = () => (
   <>
-    <style>{styles}</style>
+    <style>{CssStyles}</style>
     <div className="lds-ellipsis">
       <div />
       <div />

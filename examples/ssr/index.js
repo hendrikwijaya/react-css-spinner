@@ -1,13 +1,21 @@
-const { createElement } = require('react');
+const { createElement, Fragment } = require('react');
 const express = require('express');
 const { renderToString } = require('react-dom/server');
-const { Ellipsis } = require('react-css-spinner');
+const { Ellipsis, Ring, Ripple } = require('react-css-spinner');
 
 const port = 3000;
 const app = express();
 
 app.get('*', (req, res) => {
-  const html = renderToString(createElement(Ellipsis));
+  const html = renderToString(
+    createElement(
+      Fragment,
+      null,
+      createElement(Ellipsis),
+      createElement(Ring),
+      createElement(Ripple)
+    )
+  );
 
   res.send(`
   <!DOCTYPE html>

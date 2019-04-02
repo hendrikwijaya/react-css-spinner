@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './styles.css';
 
-const Ring = props => (
+const CssStyles = JSON.stringify(styles);
+const Ring = () => (
   <>
-    <style>{styles}</style>
+    <style>{CssStyles}</style>
     <div className="lds-ring">
       <div />
       <div />
